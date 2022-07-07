@@ -1,0 +1,28 @@
+movement speed: 0.2 | turn speed: 0.2 | turn resolution: 0.1 | goal resolution: 0.1husky position: 0.0 , 0.0 | husky orientation: 0.0 | angle to goal: 0.0
+husky position: 0.058983 , -0.000525 | husky orientation: -0.012404 | angle to goal: 3.132693
+reached waypoint: 0 ; 0 | husky position: 0.058983 ; -0.000525
+husky position: 0.058983 , -0.000525 | husky orientation: -0.0124 | angle to goal: 0.816038
+husky position: 0.058983 , -0.000525 | husky orientation: -0.012297 | angle to goal: 0.816038
+husky position: 0.058983 , -0.000525 | husky orientation: -0.012224 | angle to goal: 0.816038
+husky position: 0.058983 , -0.000525 | husky orientation: -0.012289 | angle to goal: 0.816038
+husky position: 0.059545 , -0.000532 | husky orientation: -0.012174 | angle to goal: 0.81634
+husky position: 0.060487 , -0.000543 | husky orientation: -0.012152 | angle to goal: 0.816846
+husky position: 0.059401 , -0.00053 | husky orientation: -0.012104 | angle to goal: 0.816262
+husky position: 0.059102 , -0.000526 | husky orientation: -0.012073 | angle to goal: 0.816102
+husky position: 0.059521 , -0.000532 | husky orientation: -0.011988 | angle to goal: 0.816327
+husky position: 0.058911 , -0.000524 | husky orientation: -0.012096 | angle to goal: 0.816
+husky position: 0.060039 , -0.000538 | husky orientation: -0.012141 | angle to goal: 0.816605
+husky position: 0.060957 , -0.000549 | husky orientation: -0.012091 | angle to goal: 0.817098
+husky position: 0.060455 , -0.000543 | husky orientation: -0.011951 | angle to goal: 0.816829
+husky position: 0.060459 , -0.000543 | husky orientation: -0.011922 | angle to goal: 0.816831
+husky position: 0.059809 , -0.000535 | husky orientation: -0.011973 | angle to goal: 0.816482
+husky position: 0.05994 , -0.000537 | husky orientation: -0.011898 | angle to goal: 0.816552
+husky position: 0.060691 , -0.000546 | husky orientation: -0.011799 | angle to goal: 0.816956
+husky position: 0.060098 , -0.000539 | husky orientation: -0.011941 | angle to goal: 0.816637
+husky position: 0.060188 , -0.00054 | husky orientation: -0.011838 | angle to goal: 0.816685
+husky position: 0.060526 , -0.000544 | husky orientation: -0.011934 | angle to goal: 0.816867
+husky position: 0.059234 , -0.000528 | husky orientation: -0.01179 | angle to goal: 0.816173
+husky position: 0.059504 , -0.000532 | husky orientation: -0.011704 | angle to goal: 0.816318
+husky position: 0.060773 , -0.000546 | husky orientation: -0.011611 | angle to goal: 0.816999
+husky position: 0.060819 , -0.000547 | husky orientation: -0.011504 | angle to goal: 0.817024
+husky position: 0.060796 , -0.000547 | husky orientation: -0.011605 | angle to goal: 0.817011

@@ -1,0 +1,57 @@
+from math import cos, sin
+from matplotlib import pyplot as plt
+import matplotlib.patches as mpatches
+
+plt.rcParams["figure.figsize"] = [8, 8]
+plt.rcParams["figure.autolayout"] = True
+
+# posx posy orientation in radian
+# posx posy orx ory orz orw
+# posx, posy
+
+r = 1
+pi_6 = 3.141592
+waypoint_resolution = 5
+waypoints_x = [0,3,0,2,0] # CIRCLE BIG: [0,3,0,-2,0] | STRAIGHT: [0,3,0] | ZIGZAG: [0,3,0,2,0]
+waypoints_y = [0,0,-1,0,0] # CIRCLE BIG: [0,0,2,0,0] | STRAIGHT: [0,0,0] | ZIGZAG: [0,3,0,2,0]
+x = []
+y = []
+arrows_x = []
+arrows_y = []
+arrows_dx = []
+arrows_dy = []
+
+line_idx = 0
+
+# husky_log_2022-05-11T12:23:15.056618.txt ZIGZAG
+# husky_log_2022-05-11T12:31:48.340315.txt CIRCLE BIG
+# husky_log_2022-05-11T12:42:23.988497.txt STRAIGHT
+f = open("modified_log/husky_log_2022-05-11T12:23:15.056618.txt", "r")
+
+for line in f:
+    if line_idx % waypoint_resolution == 0:
+        data = line.split(",")
+        x.append(float(data[0]))
+        y.append(float(data[1]))
+        arrows_x.append(float(data[0]))
+        arrows_y.append(float(data[1]))
+        arrows_dx.append(r * cos(float(data[2])))
+        arrows_dy.append(r * sin(float(data[2])))
+    line_idx += 1
+
+f.close()
+
+plt.xlim(-4, 4)
+plt.ylim(-4, 4)
+plt.grid()
+
+plt.quiver(arrows_x, arrows_y, arrows_dx, arrows_dy, scale=10, width=0.001, color="black", zorder=40)
+plt.plot(x, y, marker="o", markersize=2, markeredgecolor="red", markerfacecolor="red", linestyle="None", zorder=80)
+for i in range(len(waypoints_x) - 1):
+    plt.text(waypoints_x[i] + 0.0, waypoints_y[i] + 0.1, str(i), color="black", zorder=120)
+
+plt.plot(waypoints_x, waypoints_y, marker="x", markeredgecolor="green", markerfacecolor="green", color="green", markerSize="10", zorder=0)
+
+plt.gca().set_aspect("equal")
+
+plt.show()
